@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">toDoList - DesafioDio</string>
+    <string name="toolbar_create_task">Criar Tarefa</string>
+    <string name="hint_input_title">Título</string>
+    <string name="hint_input_description">Descrição</string>
+    <string name="hint_input_date">Data</string>
+    <string name="hint_input_hour">Hora</string>
+    <string name="button_create_task">Criar Tarefa</string>
+    <string name="button_cancel"><u>Cancelar</u></string>
 </resources>

@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projetos/Cursos/toDoListDesafioDio/app/src/main/res/drawable/ic_add_24.xml" value="0.245" />
-        <entry key="..\:/Projetos/Cursos/toDoListDesafioDio/app/src/main/res/layout/activity_add_task.xml" value="0.20108695652173914" />
+        <entry key="..\:/Projetos/Cursos/toDoListDesafioDio/app/src/main/res/drawable/ic_navigate_before_24.xml" value="0.2465" />
+        <entry key="..\:/Projetos/Cursos/toDoListDesafioDio/app/src/main/res/layout/activity_add_task.xml" value="0.25" />
         <entry key="..\:/Projetos/Cursos/toDoListDesafioDio/app/src/main/res/layout/activity_main.xml" value="0.29347826086956524" />
       </map>
     </option>

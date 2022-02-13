@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ToDoListDesafioDio" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#408684</item>
-        <item name="colorPrimaryVariant">#2B6E74</item>
+        <item name="colorPrimary">@color/kPrimaryColor</item>
+        <item name="colorPrimaryVariant">@color/kPrimaryDarkColor</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#E3A26A</item>
@@ -11,6 +11,8 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorTertiary">#7B443F</item>
+
+        <item name="colorOnSurface">#FF222222</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
