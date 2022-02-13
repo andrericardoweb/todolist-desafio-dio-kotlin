@@ -1,4 +1,4 @@
-package com.jamiltondamasceno.todolist_desafiodio
+package me.dio.todolist_desafiodio
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
