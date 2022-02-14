@@ -1,13 +1,16 @@
 package me.dio.todolist_desafiodio.ui
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 import me.dio.todolist_desafiodio.databinding.ActivityAddTaskBinding
+import me.dio.todolist_desafiodio.datasource.TaskDataSource
 import me.dio.todolist_desafiodio.extensions.format
 import me.dio.todolist_desafiodio.extensions.text
+import me.dio.todolist_desafiodio.model.Task
 import java.util.*
 
 
@@ -43,11 +46,26 @@ class AddTaskActivity : AppCompatActivity() {
                 .build()
 
             timePicker.addOnPositiveButtonClickListener {
-                binding.tilHour.text = "${timePicker.hour}:${timePicker.minute}"
+                val minute = if (timePicker.minute in 0..9) "0${timePicker.minute}" else timePicker.minute
+                val hour = if (timePicker.hour in 0..9) "0${timePicker.hour}" else timePicker.hour
+                binding.tilHour.text = "$hour:$minute"
             }
             timePicker.show(supportFragmentManager, "TIME_PICKER_TAG")
         }
 
+        binding.btnCancel.setOnClickListener {
+            finish()
+        }
 
+        binding.btnCreateTask.setOnClickListener {
+            val task = Task(
+                title = binding.tilTitle.text,
+                description = binding.tilDescription.text,
+                date = binding.tilDate.text,
+                hour = binding.tilHour.text
+            )
+            TaskDataSource.insertTask(task)
+            Log.e("TAG", "insertListeners: " + TaskDataSource.getList())
+        }
     }
 }
