@@ -3,6 +3,8 @@ package me.dio.todolist_desafiodio.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.datepicker.MaterialDatePicker
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.TimeFormat
 import me.dio.todolist_desafiodio.databinding.ActivityAddTaskBinding
 import me.dio.todolist_desafiodio.extensions.format
 import me.dio.todolist_desafiodio.extensions.text
@@ -23,7 +25,7 @@ class AddTaskActivity : AppCompatActivity() {
 
     private fun insertListeners() {
         binding.tilDate.editText?.setOnClickListener {
-            val datePicker =MaterialDatePicker.Builder.datePicker()
+            val datePicker = MaterialDatePicker.Builder.datePicker()
                 .setTitleText("Selecione a data")
                 .build()
             datePicker.addOnPositiveButtonClickListener {
@@ -33,5 +35,19 @@ class AddTaskActivity : AppCompatActivity() {
             }
             datePicker.show(supportFragmentManager, "DATE_PICKER_TAG")
         }
+
+        binding.tilHour.editText?.setOnClickListener {
+            val timePicker = MaterialTimePicker.Builder()
+                .setTimeFormat(TimeFormat.CLOCK_24H)
+                .setTitleText("Selecione a hora")
+                .build()
+
+            timePicker.addOnPositiveButtonClickListener {
+                binding.tilHour.text = "${timePicker.hour}:${timePicker.minute}"
+            }
+            timePicker.show(supportFragmentManager, "TIME_PICKER_TAG")
+        }
+
+
     }
 }
