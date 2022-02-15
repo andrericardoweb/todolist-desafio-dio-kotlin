@@ -7,4 +7,6 @@
     <string name="hint_input_hour">Hora</string>
     <string name="button_create_task">Criar Tarefa</string>
     <string name="button_cancel"><u>Cancelar</u></string>
+    <string name="tv_title_home">Tarefas</string>
+    <string name="description_add_new_task">Adicionar nova tarefa</string>
 </resources>
