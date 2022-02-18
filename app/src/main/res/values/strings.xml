@@ -9,4 +9,6 @@
     <string name="button_cancel"><u>Cancelar</u></string>
     <string name="tv_title_home">Tarefas</string>
     <string name="description_add_new_task">Adicionar nova tarefa</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_delete">Excluir</string>
 </resources>
