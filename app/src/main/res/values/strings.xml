@@ -11,4 +11,5 @@
     <string name="description_add_new_task">Adicionar nova tarefa</string>
     <string name="label_edit">Editar</string>
     <string name="label_delete">Excluir</string>
+    <string name="empty_state">Ops! Você não possui\nnenhuma tarefa</string>
 </resources>
